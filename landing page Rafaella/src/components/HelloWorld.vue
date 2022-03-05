@@ -1,3 +1,54 @@
+<template>
+  <body>
+  <header class="cabecalho">
+    <img class="cabecalho-imagem" src="assets/logo.svg" alt="logo da Ballerini">
+    <nav class="cabecalho-menu">
+      <a class="cabecalho-menu-item">Cominidade Ballerini</a>
+      <a class="cabecalho-menu-item">Tutorial</a>
+      <a class="cabecalho-menu-item">Open Source</a>
+      <a class="cabecalho-menu-item">Comandos</a>
+    </nav>
+  </header>
+
+  <main class="conteudo">
+    <section class="conteudo-principal"> 
+      <div class="conteudo-principal-escrito">
+        <h1 class="conteudo-principal-escrito-titulo">Balle Bot</h1>
+         <h2 class="conteudo-principal-escrito-subtitulo">Deixe a sua comunidade segura de um jeito fácil</h2>
+         <button class="conteudo-principal-escrito-botao" onclick="meadd()" >Me adicione! </button> 
+
+      </div>
+      <img class="conteudo-principal-imagem" src="img/ballebot.svg" alt="imagem do balle bot">
+    </section>
+
+    <section class="conteudo-secudario"> 
+       <h3 class="conteudo-secudario-titulo">O que ela faz por você?</h3>
+       <p class="conteudo-secudario-paragrafo">1. Cria um <strong> sistema de verificação capcha</strong> para novos membros garantirem que não são robôs</p>
+       <p class="conteudo-secudario-paragrafo">2. Possui um <strong> sistema de banimento automático</strong> para links suspeitos que forem enviados na comunidade</p>
+       <p class="conteudo-secudario-paragrafo">3. <strong> Sistema de avisos e banimento manual</strong>, para pessoas administradoras utilizarem</p>
+
+    </section>
+  </main>
+
+  <footer class="rodape">
+   <img class="rodape-imagem" src="ballrrini.svg" alt="">
+  </footer>
+
+ 
+</body>
+</template>
+
+<script>
+export default {
+  name: 'HelloWorld',
+  props: {
+    msg: String
+  }
+}
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
 
 
@@ -173,3 +224,4 @@ font-family: 'Sarala', sans-serif;
     margin: 0 auto;
 
    }
+</style>
